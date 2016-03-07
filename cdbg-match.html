@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		article.quiz-accordion {
+			display: block;
+			width: 95%;
+			margin: 0 auto;
+			padding: 1em;
+			background-color: #5da8ba;
+			border-radius: 5px;
+			font-family: sans-serif;
+			line-height: 1em;
+		}
+		article.quiz-accordion .quiz-place {
+			display: block;
+			width: 95%;
+			height: 4em;
+			padding: 0 1em;
+			margin: 0.5em auto;
+			overflow: hidden;
+			background-color: #fff;
+			border-radius: 3px;
+		}
+		/** Expand quiz headers on click, make height of question area responsive */
+		article.quiz-accordion .quiz-place:target {
+			background-color: #fff;
+			height: 100%;
+			padding-bottom: 1em;
+		}
+		/** Where the magic happens. Reveal multiple choice answers by clicking + holding questions */
+		.question h3:active ~ .correct {
+			color: #f7a11a;
+			font-weight: bold;
+		}
+		/** Horizontally display answer choices */
+		.question p {
+			line-height: 1.5em;
+			font-size: 1em;
+			display: inline-block;
+			margin: 0px 30px 0px 10px;
+			width: 200px;
+		}
+		/** Handle longform text answers differently than one word answers */
+		.question p.longform {
+			display: block;
+			width: 98%;
+		}
+	</style>
+</head>
+<body>
+<article class="quiz-accordion">
+	<section id="detroit" class="quiz-place">
+		<h2><a href="#detroit">Detroit</a></h2>
+			<section class="question">
+				<h3>1. In 2016, Detroit proposes to spend MOST of its CDBG allocation ($6.9 million of $31.5 million) on which of the following?</h3>
+				<p class="correct longform">a. Section 108 loan repayment</p>
+				<p class="longform">b. Rehabilitation of existing housing units</p>
+				<p class="longform">c. Public services and activities for Detroit citizens</p>
+				<p class="longform">d. Blight removal and demolition</p>
+			</section>
+			<section class="question">
+				<h3>2. In 2016, Detroit proposes to spend LEAST of its CDBG allocation ($330,000 of $31.5 million) on which of the following?</h3>
+				<p class="longform">a. Improvements to public facilities</p>
+				<p class="longform">b. Services to reduce number of Detroit citizens experiencing homelessness</p>
+				<p class="correct longform">c. Economic development and commerical rehabilitation</p>
+				<p class="longform">d. Rehabiliation of existing affordable housing units</p>
+			</section>
+			<section class="question">
+				<h3>3. In 2016, Detroit proposes to use how much money for park improvements?</h3>
+				<p>a. $380,000</p>
+				<p class="correct">b. $500,000</p>
+				<p>c. $1.7 million</p>
+				<p>d. $3 million</p>
+			</section>
+	</section>
+	<section id="wayne" class="quiz-place">
+		<h2><a href="#wayne">Wayne County</a></h2>
+			<section class="question">
+				<h3>1. In 2015, which municipality was granted $50,000 for a fire truck?</h3>
+				<p>a. Detroit</p>
+				<p class="correct">b. Ecorse</p>
+				<p>c. Brownstown Township</p>
+				<p>d. Inkster</p>
+			</section>
+			<section class="question">
+				<h3>2. In 2015, which municipality was granted $38,186 for an ADA-accessible canoe and kayak launch?</h3>
+				<p>a. Wyandotte</p>
+				<p>b. Grosse Ile Township</p>
+				<p class="correct">c. Belleville</p>
+				<p>d. Riverview</p>
+			</section>
+			<section class="question">
+				<h3>3. In 2015, which municipality was granted $23,152 for historic preservation?</h3>
+				<p class="correct">a. Trenton</p>
+				<p>b. Plymouth</p>
+				<p>c. Melvindale </p>
+				<p>d. Harper Woods </p>
+			</section>
+			<section class="question">
+				<h3>4. In 2015, which municipality did NOT receive CDBG funds for sidewalk repairs or street scape improvements?</h3>
+				<p>a. Ecorse</p>
+				<p>b. Grosse Pointe Park</p>
+				<p>c. Allen Park</p>
+				<p class="correct">d. Garden City</p>
+			</section>
+			<section class="question">
+				<h3>5. In 2015, which municipality did NOT receive CDBG funds for clean up, blight removal and elimination?</h3>
+				<p>a. Hamtramck</p>
+				<p class="correct">b. River Rouge</p>
+				<p>c. Highland Park</p>
+				<p>d. Detroit</p>
+			</section>
+	</section>
+	<section id="oakland" class="quiz-place">
+		<h2><a href="#oakland">Oakland County</a></h2>
+			<section class="question">
+				<h3>1. In 2016, which municipality proposes to use $760,004 for clearance and demolition?</h3>
+				<p class="correct">a. Pontiac</p>
+				<p>b. South Lyon</p>
+				<p>c. Wixom</p>
+				<p>d. Commerce Township</p>
+			</section>
+			<section class="question">
+				<h3>2. Using $107,000 to support parks and recreational facilities is part of which community’s 2016 plans?</h3>
+				<p>a. Bloomfield Hills</p>
+				<p>b. Royal Oak</p>
+				<p class="correct">c. Troy</p>
+				<p>d. Rochester</p>
+			</section>
+			<section class="question">
+				<h3>3. Tree planting with a cost of $5,000 was a project proposal in which suburb?</h3>
+				<p class="correct">a. Holly Township</p>
+				<p>b. Beverly Hills</p>
+				<p>c. Lake Orion Township</p>
+				<p>d. Northville</p>
+			</section>
+			<section class="question">
+				<h3>4. In 2016, which municipality did NOT apply for CDBG funds to support code enforcement?</h3>
+				<p>a. Hazel Park</p>
+				<p>b. Ferndale</p>
+				<p>c. Madison Heights</p>
+				<p class="correct">d. Novi</p>
+			</section>
+			<section class="question">
+				<h3>5. In 2016, which municipality did NOT apply for CDBG funds for minor home repairs?</h3>
+				<p>a. Leonard Township</p>
+				<p class="correct">b. Farmington</p>
+				<p>c. Clarkston Township</p>
+				<p>d. Auburn Hills</p>
+			</section>
+	</section>
+	<section id="macomb" class="quiz-place">
+		<h2><a href="#macomb">Macomb County</a></h2>
+			<section class="question">
+				<h3>1. In 2016, which municipality proposes to use $323,815 to improve a senior center parking lot?</h3>
+				<p>a. Clinton Township</p>
+				<p class="correct">b. Sterling Heights</p>
+				<p>c. St. Clair Shores</p>
+				<p>d. Warren</p>
+			</section>
+			<section class="question">
+				<h3>2. Reconstructing two parks would be a $100,000 project in which community?</h3>
+				<p>a. Utica</p>
+				<p>b. Shelby Township</p>
+				<p>c. Harrison Township</p>
+				<p class="correct">d. Clinton Township</p>
+			</section>
+			<section class="question">
+				<h3>3. In 2016, which municipality proposes to use $5,000 to support the Hockey Player Enablement Fund?</h3>
+				<p>a. Warren</p>
+				<p>b. Armada Township</p>
+				<p class="correct">c. St. Clair Shores</p>
+				<p>d. Richmond</p>
+			</section>
+			<section class="question">
+				<h3>4. One of these suburbs did NOT apply for CDBG funds to bolster their public library's book collection. Which one?</h3>
+				<p>a. Sterling Heights</p>
+				<p class="correct">b. Warren</p>
+				<p>c. Armada Township</p>
+				<p>d. Shelby Township</p>
+			</section>
+			<section class="question">
+				<h3>5. In 2016, which municipality did NOT apply for CDBG funds to support homelessness prevention services?</h3>
+				<p class="correct">a. Macomb Township</p>
+				<p>b. Warren</p>
+				<p>c. Sterling Heights</p>
+				<p>d. Lenox Township</p>
+			</section>
+	</section>
+</article>
+</body>
+</html>
