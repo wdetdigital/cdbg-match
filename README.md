@@ -13,6 +13,8 @@ This quiz lives on wdet.org in the post <a href="http://wdet.org/posts/2016/03/0
 ## Make your own
 This repo contains two files: the code for the CDBG quiz made for WDET and a generalized template for coding your own called `mult-choice-template.html`.
 
-Start by replacing the sample questions and answers with your own, adding more sections as needed. If you're using a text editor like we do at WDET, switch to Source, then copy and paste everything between the `<style>...</style>` and `<section>...<section>` tags. You'll inherit font and other styles from your page, to so plan to make small adjustments as needed.
+Start by replacing the sample questions and answers with your own, adding more sections as needed. 
+
+If you're using a text editor like we do at WDET, switch to Source, then copy and paste everything between the `<style>...</style>` and `<section>...<section>` tags. You'll inherit font and other styles from your page, to so plan to make small adjustments as needed.
 
 If you also want to wrap your questions in the expandable accordion layout used in the CDBG quiz, find that template in our sister repo <a href="https://github.com/wdetdigital/primaries-quiz">wdetdigital/primaries-quiz</a>.
