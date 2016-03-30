@@ -2,6 +2,7 @@
 <html>
 <head>
 	<style type="text/css">
+		/** Style quiz area */
 		article.quiz-accordion {
 			display: block;
 			width: 95%;
@@ -12,6 +13,7 @@
 			font-family: sans-serif;
 			line-height: 1em;
 		}
+		/** Style geographic section headers */
 		article.quiz-accordion .quiz-place {
 			display: block;
 			width: 95%;
@@ -22,18 +24,18 @@
 			background-color: #fff;
 			border-radius: 3px;
 		}
-		/** Expand quiz headers on click, make height of question area responsive */
+		/** Expand quiz headers on click, height responds to length of questions */
 		article.quiz-accordion .quiz-place:target {
 			background-color: #fff;
 			height: 100%;
 			padding-bottom: 1em;
 		}
-		/** Where the magic happens. Reveal multiple choice answers by clicking + holding questions */
+		/** Where the magic happens. Reveal right answer choice by clicking and holding question text */
 		.question h3:active ~ .correct {
 			color: #f7a11a;
 			font-weight: bold;
 		}
-		/** Horizontally display answer choices */
+		/** Horizontally display one-word answer choices */
 		.question p {
 			line-height: 1.5em;
 			font-size: 1em;
@@ -41,7 +43,7 @@
 			margin: 0px 30px 0px 10px;
 			width: 200px;
 		}
-		/** Handle longform text answers differently than one word answers */
+		/** Vertically display longform answer choices */
 		.question p.longform {
 			display: block;
 			width: 98%;
@@ -49,9 +51,12 @@
 	</style>
 </head>
 <body>
+<!-- Create quiz area -->
 <article class="quiz-accordion">
+	<!-- Create expandable sections for each geography -->
 	<section id="detroit" class="quiz-place">
 		<h2><a href="#detroit">Detroit</a></h2>
+			<!-- Wrap each question and its' answers in a section element -->
 			<section class="question">
 				<h3>1. In 2016, Detroit proposes to spend MOST of its CDBG allocation ($6.9 million of $31.5 million) on which of the following?</h3>
 				<p class="correct longform">a. Section 108 loan repayment</p>

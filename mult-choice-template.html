@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		/** Where the magic happens. Reveal the answer by clicking and holding question text */
+		.question h3:active ~ .correct {
+			color: orange;
+			font-weight: bold;
+		}
+		/** Horizontally display answer choices */
+		.question p {
+			line-height: 1.5em;
+			font-size: 1em;
+			display: inline-block;
+			margin: 0px 30px 0px 10px;
+			width: 200px;
+		}
+		/** Vertically display longform answer choices */
+		.question p.longform {
+			display: block;
+			width: 98%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Wrap each question and its' answers in a section element -->
+	<section class="question">
+		<h3>1. What's your first question?</h3>
+		<!-- Assign the right answer correct class -->
+		<p>a. One</p>
+		<p>b. Two</p>
+		<p class="correct">c. Three</p>
+		<p>d. Four</p>
+	</section>
+	<section class="question">
+		<h3>2. What's your second question?</h3>
+		<!-- Answer choices default to horizontal display. If your text is crowded, add longform class. -->
+		<p class="correct longform">a. First choice lorem ipsum doler</p>
+		<p class="longform">b. Second choice lorem ipsum doler</p>
+		<p class="longform">c. Third choice lorem ipsum doler</p>
+		<p class="longform">d. Fourth choice lorem ipsum doler</p>
+	</section>
+</body>
+</html>
